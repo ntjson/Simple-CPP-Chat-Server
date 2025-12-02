@@ -1,3 +1,4 @@
+
 # 📡 Multithreaded TCP Chat Application
 
 ![C++](https://img.shields.io/badge/Language-C++-00599C?style=for-the-badge&logo=c%2B%2B)
@@ -46,3 +47,70 @@ graph TD
     end
 
     Network((TCP Connection))
+```
+
+1.  **Main Thread:** Handles User Input (`std::getline`) and sending data.
+2.  **Receiver Thread:** Detached thread that loops `recv()` to listen for incoming data in the background.
+
+---
+
+## ⚙️ Getting Started
+
+### Prerequisites
+*   Windows OS (Required for `<winsock2.h>`)
+*   MinGW Compiler (GCC) or MSVC
+*   CMake
+
+### Installation & Build
+
+**Option 1: Using CLion**
+1.  Open the project in CLion.
+2.  Reload the CMake project.
+3.  Select `server` from the Run Configuration and press Play.
+4.  Select `client` from the Run Configuration and press Play.
+
+**Option 2: Using Command Line (MinGW)**
+If you prefer the terminal, ensure you link the Winsock library (`-lws2_32`):
+
+```bash
+# Compile Server
+g++ server.cpp -o server.exe -lws2_32
+
+# Compile Client
+g++ client.cpp -o client.exe -lws2_32
+```
+
+---
+
+## 🎮 How to Run
+
+1.  **Start the Server first.**
+    *   Open a terminal and run `server.exe`.
+    *   It will display: `Server is now listening...`
+2.  **Start the Client.**
+    *   Open a second terminal and run `client.exe`.
+    *   It will display: `Connected to server!`
+3.  **Chat!**
+    *   Type messages in either window and hit Enter.
+4.  **Exit.**
+    *   Type `exit` or `quit` to close the connection.
+
+---
+
+## 📸 Screenshots
+
+---
+
+## 📝 Learning Outcomes
+
+This project was built to master the following concepts:
+*   **Winsock Initialization:** `WSAStartup` and `WSACleanup`.
+*   **Socket Lifecycle:** `socket`, `bind`, `listen`, `accept`, `connect`.
+*   **Data Transfer:** `send` and `recv` with buffer management.
+*   **Concurrency:** Using `std::thread` and `.detach()` for parallel execution.
+
+---
+
+## 📜 License
+
+This project is open source. Feel free to use it for educational purposes.
