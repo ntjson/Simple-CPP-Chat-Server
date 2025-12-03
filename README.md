@@ -9,7 +9,7 @@ A robust, bidirectional Client-Server chat application built from scratch using 
 
 ---
 
-## 🚀 Features
+## Features
 
 *   **Client-Server Architecture:** Distinct server and client implementations.
 *   **TCP Protocol:** Ensures reliable, ordered delivery of messages without data loss.
@@ -21,7 +21,7 @@ A robust, bidirectional Client-Server chat application built from scratch using 
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 *   **Language:** C++ (Standard 14/17/20)
 *   **Networking API:** Windows Sockets 2 (Winsock2 / `ws2_32.lib`)
@@ -30,7 +30,7 @@ A robust, bidirectional Client-Server chat application built from scratch using 
 
 ---
 
-## 🧩 Architecture
+## Architecture
 
 The application uses a **multithreaded approach** to solve the blocking I/O problem.
 
@@ -54,7 +54,7 @@ graph TD
 
 ---
 
-## ⚙️ Getting Started
+## ️ Getting Started
 
 ### Prerequisites
 *   Windows OS (Required for `<winsock2.h>`)
@@ -82,7 +82,7 @@ g++ client.cpp -o client.exe -lws2_32
 
 ---
 
-## 🎮 How to Run
+## How to Run
 
 1.  **Start the Server first.**
     *   Open a terminal and run `server.exe`.
@@ -97,11 +97,11 @@ g++ client.cpp -o client.exe -lws2_32
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 ---
 
-## 📝 Learning Outcomes
+## Learning Outcomes
 
 This project was built to master the following concepts:
 *   **Winsock Initialization:** `WSAStartup` and `WSACleanup`.
@@ -111,6 +111,6 @@ This project was built to master the following concepts:
 
 ---
 
-## 📜 License
+## License
 
 This project is open source. Feel free to use it for educational purposes.
