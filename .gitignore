@@ -1,15 +1,11 @@
-# CLion specific settings
 .idea/
 cmake-build-debug/
 
-# Compiled Object files
 *.o
 *.obj
 
-# Executables (We don't want to upload the .exe, people should compile it themselves)
 *.exe
 *.dll
 
-# OS generated files
 .DS_Store
 Thumbs.db
