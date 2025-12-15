@@ -25,9 +25,6 @@ A robust, bidirectional Client-Server chat application built from scratch using 
 
 *   **Language:** C++ (Standard 14/17/20)
 *   **Networking API:** Windows Sockets 2 (Winsock2 / `ws2_32.lib`)
-*   **Build System:** CMake
-*   **IDE:** CLion
-
 ---
 
 ## Architecture
