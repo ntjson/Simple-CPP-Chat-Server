@@ -94,10 +94,6 @@ g++ client.cpp -o client.exe -lws2_32
 
 ---
 
-## Screenshots
-
----
-
 ## Learning Outcomes
 
 This project was built to master the following concepts:
